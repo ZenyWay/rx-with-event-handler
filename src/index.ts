@@ -18,11 +18,14 @@ import withEventHandlerProps, {
   EventHandlerProps,
   EventHandlerPropsOperator,
   EventProp,
-  hasEvent
+  hasEvent,
+  hasEventHandler
 } from 'rx-with-event-handler-props'
 import when from 'rx-when'
 import compose from 'basic-compose'
 import { Observable } from 'rxjs/Observable'
+
+export { hasEvent, hasEventHandler }
 
 export type RxOperator<I,O> = ($: Observable<I>) => Observable<O>
 

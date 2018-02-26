@@ -40,10 +40,13 @@ import withEventHandler from 'rx-with-event-handler'
 
 withEventHandler('click')() // = withEventHandlerProps('click')
 ```
+
+for convenience, this module exports the `hasEvent` and `hasEventHandler`
+predicates from [`rx-with-event-handler-props`](https://github.com/ZenyWay/rx-with-event-handler-props#type-definitions).
+
 for a partial specification of this API,
 run the [unit tests](https://cdn.rawgit.com/ZenyWay/rx-with-event-handler/v1.0.0/spec/web/index.html)
 in your browser.
-
 
 # TypeScript
 although this library is written in [TypeScript](https://www.typescriptlang.org),
