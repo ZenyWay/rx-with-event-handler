@@ -11,6 +11,8 @@ compose(
   withEventHandlerProps(id)
 )
 ```
+for a usage example, see the [`component-from-stream`](https://npmjs.com/package/component-from-stream/) module.
+
 for more information, see the [`rx-with-event-handler-props`](https://npmjs.com/package/rx-with-event-handler-props/),
 [`rx-when`](https://npmjs.com/package/rx-when/)
 and [`basic-compose`](https://npmjs.com/package/basic-compose/) modules.
