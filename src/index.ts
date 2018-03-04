@@ -19,13 +19,14 @@ import withEventHandlerProps, {
   EventHandlerPropsOperator,
   EventProp,
   hasEvent,
-  hasEventHandler
+  hasEventHandler,
+  toHandlerKey
 } from 'rx-with-event-handler-props'
 import when from 'rx-when'
 import compose from 'basic-compose'
 import { Observable } from 'rxjs/Observable'
 
-export { hasEvent, hasEventHandler }
+export { hasEvent, hasEventHandler, toHandlerKey }
 
 export type RxOperator<I,O> = ($: Observable<I>) => Observable<O>
 
@@ -43,7 +44,7 @@ export default function withEventHandler <E>(id: string) {
   ) {
     return !arguments.length
       ? withEventHandlerProps<E>(id)
-      : compose<Observable<I>,Observable<O>>(
+      : compose<Observable<O>>(
           when<I&EventHandlerProps<E,EventProp<E>>,O>(hasEvent(id))(
             onEvent,
             orElse
