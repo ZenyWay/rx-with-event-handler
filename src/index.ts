@@ -24,7 +24,7 @@ import withEventHandlerProps, {
 } from 'rx-with-event-handler-props'
 import when from 'rx-when'
 import compose from 'basic-compose'
-import { Observable } from 'rxjs/Observable'
+import { Observable } from 'rxjs'
 
 export { hasEvent, hasEventHandler, toHandlerKey }
 

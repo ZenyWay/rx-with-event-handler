@@ -14,9 +14,10 @@
  * Limitations under the License.
  */
 //
+require('symbol-observable')
 const withEventHandler = require('../').default
 const createSubject = require('rx-subject').default
-const from = require('rxjs/observable/from').from
+const from = require('rxjs').from
 const tap = require('rxjs/operators').tap
 
 describe('withEventHandler:', function () {

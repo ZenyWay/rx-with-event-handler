@@ -45,7 +45,7 @@ for convenience, this module exports the `hasEvent`, `hasEventHandler` and
 `toHandlerKey` helpers from [`rx-with-event-handler-props`](https://github.com/ZenyWay/rx-with-event-handler-props#type-definitions).
 
 for a partial specification of this API,
-run the [unit tests](https://cdn.rawgit.com/ZenyWay/rx-with-event-handler/v1.2.0/spec/web/index.html)
+run the [unit tests](https://cdn.rawgit.com/ZenyWay/rx-with-event-handler/v1.2.1/spec/web/index.html)
 in your browser.
 
 # TypeScript
